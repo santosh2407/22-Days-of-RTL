@@ -1,1 +1,30 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 26.12.2022 19:34:12
+// Design Name: 
+// Module Name: HAD
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
+
+module HAD(A,B,SUM,CRY);
+
+input A,B;
+output SUM,CRY;
+
+assign SUM = A^B;
+assign CRY = A&B;
+endmodule
