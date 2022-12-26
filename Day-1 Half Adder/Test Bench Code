@@ -1,0 +1,39 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 26.12.2022 19:35:06
+// Design Name: Santosh Kumar E
+// Module Name: HATB
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module HATB();
+
+reg  a,b;
+wire  sum,cry;
+
+HAD ut (a,b,sum,cry);
+
+initial begin
+a = 4'b0; b=1'b0;
+#100
+a = 1'b0; b=1'b1;
+#100
+a = 1'b1; b=1'b0;
+#100
+a = 1'b1; b=1'b1;
+end
+endmodule
