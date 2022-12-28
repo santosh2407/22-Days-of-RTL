@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Santosh Kumar E
 // 
 // Create Date: 27.12.2022 21:54:56
 // Design Name: 
@@ -34,16 +34,6 @@ always@(posedge clk)
         2'b10 : q = 1;
         2'b11 : q = 1'bz;
     endcase
-    /*
-    if(2'b00)
-        q = q;
-    else if(2'b01)
-        q = 0;
-    else if(2'b10)
-        q = 1;
-    else
-        q = 1'bz;\
-        */
     end
     
     assign qbar = ~q;
